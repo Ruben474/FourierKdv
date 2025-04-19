@@ -1,0 +1,7 @@
+\Title{Physics-Informed Neural Networks and Fourier Methods for the Generalized Korteweg--de Vries Equation}
+\Author{Rub\'en Dar\'io Ortiz Ortiz $^{1,\dagger}$*\orcidA{}, Ana Magnolia Marín Ramírez $^{1,\dagger}$\orcidB{} and Miguel Ángel Ortiz Marín $^{2,\dagger}$}
+\abstract{  The generalized Korteweg--de Vries (gKdV) equation models nonlinear wave phenomena in dispersive media. Traditional numerical methods---including Fourier spectral methods and Crank--Nicolson schemes---are well established. More recently, Physics-Informed Neural Networks (PINNs) have emerged as a mesh-free alternative for solving partial differential equations. \\
+ This article compares the performance of a Fourier-based (Crank--Nicolson) solver with a PINN method for the gKdV equation. Various numerical experiments are performed to assess accuracy, computational efficiency, and stability under different initial conditions. \\
+ PINNs can achieve \( L^2 \) errors on the order of $10^{-3}$ in favorable scenarios, though performance depends strongly on architecture and sampling strategy, the Fourier solver achieves higher precision (e.g., $10^{-5}$--$10^{-6}$) in a fraction of the computational time. \\
+ PINNs remain an attractive method for complex or data-driven PDE problems, but standard spectral methods are superior in terms of speed and accuracy for classical structured domains. Preliminary experiments suggest that hybrid models may combine the best of both worlds.
+}
