@@ -1,7 +1,7 @@
-\Title{Physics-Informed Neural Networks and Fourier Methods for the Generalized Korteweg--de Vries Equation}
-\Author{Rub\'en Dar\'io Ortiz Ortiz $^{1,\dagger}$*\orcidA{}, Ana Magnolia Marín Ramírez $^{1,\dagger}$\orcidB{} and Miguel Ángel Ortiz Marín $^{2,\dagger}$}
-\abstract{  The generalized Korteweg--de Vries (gKdV) equation models nonlinear wave phenomena in dispersive media. Traditional numerical methods---including Fourier spectral methods and Crank--Nicolson schemes---are well established. More recently, Physics-Informed Neural Networks (PINNs) have emerged as a mesh-free alternative for solving partial differential equations. \\
- This article compares the performance of a Fourier-based (Crank--Nicolson) solver with a PINN method for the gKdV equation. Various numerical experiments are performed to assess accuracy, computational efficiency, and stability under different initial conditions. \\
- PINNs can achieve \( L^2 \) errors on the order of $10^{-3}$ in favorable scenarios, though performance depends strongly on architecture and sampling strategy, the Fourier solver achieves higher precision (e.g., $10^{-5}$--$10^{-6}$) in a fraction of the computational time. \\
- PINNs remain an attractive method for complex or data-driven PDE problems, but standard spectral methods are superior in terms of speed and accuracy for classical structured domains. Preliminary experiments suggest that hybrid models may combine the best of both worlds.
-}
+# Physics-Informed Neural Networks and Fourier Methods for the Generalized Korteweg--de Vries Equation
+
+**Autores**: Rubén Darío Ortiz Ortiz, Ana Magnolia Marín Ramírez, Miguel Angel Ortiz Marín
+
+## Abstract
+
+We conduct a comprehensive comparative study of numerical solvers for the generalized Korteweg--de Vries (gKdV) equation, focusing on classical Fourier-based Crank--Nicolson methods and Physics-Informed Neural Networks (PINNs). Our work benchmarks these approaches across nonlinear regimes—including the cubic case \( \nu = 3 \)—and diverse initial conditions such as solitons, smooth pulses, discontinuities, and noisy profiles. In addition to pure PINN and spectral models, we propose a novel hybrid PINN–spectral method incorporating a regularization term based on Fourier reference solutions, leading to improved accuracy and stability. Numerical experiments show that while spectral methods achieve superior efficiency on structured domains, PINNs provide flexible, mesh-free alternatives for data-driven and irregular setups. The hybrid model achieves lower relative \( L^2 \) error and better captures soliton interactions. Our results demonstrate the complementary strengths of spectral and machine learning methods for nonlinear dispersive PDEs.
